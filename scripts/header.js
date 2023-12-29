@@ -3,15 +3,17 @@
 const create = document.querySelector('.js-create')
 const createDropdawn = document.querySelector('.js-create-dropdawn');
 create.addEventListener('click',()=>{
-    if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload.svg`){
+    if(!create.classList.contains('darke')){
+        create.classList.add('darke')
         create.src = `images/icons/upload-darke.svg`
-        if(notification.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/notifications-darke.svg`){
+        if(notification.classList.contains('darke')){
+            notification.classList.remove('darke')
             notification.src = `images/icons/notifications.svg`
         }   
     }else{
+        create.classList.remove('darke')
         create.src = `images/icons/upload.svg`
     }
-    console.log(create.src)
     changeDisplay(createDropdawn)
     notificationDropdawn.classList.remove('display-block');
     profileDropdawn.classList.remove('display-block');
@@ -21,12 +23,15 @@ create.addEventListener('click',()=>{
 const notification = document.querySelector('.js-notification');
 const notificationDropdawn = document.querySelector('.js-notification-dropdawn');
 notification.addEventListener('click',()=>{
-    if(notification.src === `https://cherifmoh.github.io/Youtube/Youtube.html/icons/notifications.svg`){
+    if(!notification.classList.contains('darke')){
+        notification.classList.add('darke')
         notification.src = `images/icons/notifications-darke.svg`
-        if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/icons/upload-darke.svg`){
+        if(create.classList.contains('darke')){
+            create.classList.remove('darke')
             create.src = `images/icons/upload.svg`
         }
         }else{
+            notification.classList.remove('darke')
             notification.src = `images/icons/notifications.svg`
         }
     changeDisplay(notificationDropdawn)
@@ -38,10 +43,12 @@ const profile = document.querySelector('.js-profile');
 const profileDropdawn = document.querySelector('.js-profile-dropdawn');
 profile.addEventListener('click',()=>{
     
-    if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload-darke.svg`){
+    if(create.classList.contains('darke')){
+        create.classList.remove('darke')
         create.src = `images/icons/upload.svg`
     }
-    if(notification.src === `https://cherifmoh.github.io/images/icons/notifications-darke.svg`){
+    if(create.classList.contains('darke')){
+        notification.classList.remove('darke')
         notification.src = `images/icons/notifications.svg`
     }
         
@@ -67,10 +74,12 @@ function changeDisplay(item){
 };
 
 function removeAllDropdawn(){
-    if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload-darke.svg`){
+    if(create.classList.contains('darke')){
+        create.classList.remove('darke')
         create.src = `images/icons/upload.svg`
     }
-    if(notification.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/notifications-darke.svg`){
+    if(notification.classList.contains('darke')){
+        notification.classList.remove('darke')
         notification.src = `images/icons/notifications.svg`
     } 
     createDropdawn.classList.remove('display-block');

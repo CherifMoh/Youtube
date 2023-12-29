@@ -127,12 +127,15 @@ document.querySelector('.js-create')
 
     let like = document.querySelector('.js-like')
     like.addEventListener('click',()=>{
-        if(dislike.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/dislike-darke.png`){
+        if(dislike.classList.contains('darke')){
+            dislike.classList.remove('darke')
             dislike.src = `images/icons/dislike.png`
         }
-        if(like.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/like.png`){
+        if(!like.classList.contains('darke')){
+            like.classList.add('darke')
             like.src = `images/icons/like-darke.png`
         }else{
+            like.classList.remove('darke')
             like.src = `images/icons/like.png`
         }
     })

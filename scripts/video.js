@@ -113,7 +113,7 @@ document.querySelector('.js-create')
         }
     });
     let like = document.querySelector('.js-like-button')
-    let dislike = document.querySelector('.js-dislike-disbutton')
+    let dislike = document.querySelector('.js-like-disbutton')
     dislike.addEventListener('click',()=>{
         if(like.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/like-darke.png`){
             like.src = `images/icons/like.png`

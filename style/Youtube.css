@@ -1,0 +1,413 @@
+
+
+  
+body{
+    padding-top: 106px;
+    padding-left: 60px;
+    font-family: Roboto, Arial, sans-serif;
+}
+.overflow{
+    overflow-y: hidden;
+}
+.translatx{
+    translate: 164px 0px;
+}
+.padding-left{
+    padding-left: 224px;
+}
+.videos{
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    padding: 20px;
+    display :grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap:40px ;
+}
+@media (max-width : 1912px) {
+    .videos{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+}
+@media (max-width : 1591px) {
+    .videos{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+@media (max-width : 1091px) {
+    .videos{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .side-bar-on{
+        display: none!important;
+    }
+    body{
+        padding-top: 106px!important;
+        padding-left: 60px!important;
+    }
+    nav{
+        translate: 0px 0px!important;
+    }
+}
+@media (max-width : 799px) {
+    .side-bar-on{
+        display: none;
+    }
+    .side-bar{
+        display: none!important;
+    }
+    body{
+        padding-top: 106px!important;
+        padding-left: 10px!important;
+    }
+    nav{
+        translate: -50px 0px!important;
+    }
+}
+@media(max-width : 700px){
+    .videos{
+        grid-template-columns: 1fr ;
+    }
+}
+.videos-image{
+    position: relative;
+    cursor: pointer;
+    width: 100% ;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 15px;
+    transition:  border-radius 0.2s;
+}
+.time-re{
+    position: relative;
+}
+.video-time{
+    position: absolute;
+    padding: 4px;
+    color: #fff;
+    background-color: black;
+    bottom: 8px;
+    right: 5px;
+    border-radius: 2px;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.videos-image:hover{
+    border-radius: 0px;
+}
+
+.video-desc{
+    display: grid;
+    grid-template-columns:50px 1fr;
+    font-family: Roboto, Arial, sans-serif;
+}
+.video-logo{
+    cursor: pointer;
+    object-fit: contain;
+    border-radius: 50px;
+    margin-right: 20px;
+    width: 36px; ;
+}
+
+.video-title{
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-family: Roboto, Arial, sans-serif;
+    font-size:14px;
+    font-weight: 500;
+    margin-bottom: 8px;   
+}
+.channel-name{
+    display: block;
+    text-decoration: none;
+    color:#606060;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+}
+.video-stats{
+    display: block;
+    text-decoration: none;
+    color:#606060;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.side-bar{
+    z-index: 3;
+    position: fixed;
+    top: 60px;
+    bottom: 0px;
+    left: 0;
+    background-color: #fff;
+    width: 72px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-links{
+    cursor: pointer;
+    width: 72px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-links:hover{
+    background-color: #eaeaea;
+    border-radius: 10px;
+}
+.sidebar-icons{
+    width: 24px;
+    height: 24px;
+}
+.sidebar-sub{
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    margin-top: 6px;
+}
+.sidebar-links p{
+    text-transform: capitalize;
+}
+.creat{
+    left: -15px;
+} 
+.apps{
+    left: 16px;
+}
+.noti{
+    left: -27px;
+}
+.voise{
+    left: -40px;
+}
+.hide{
+    display: none;
+}
+.side-bar-on{
+    position: fixed;
+    top: 53px;
+    bottom: 0px;
+    left: 0;
+    background-color: #fff;
+    width: 240px;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    overflow-y:scroll;
+}
+.side-bar-on::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+  }
+  /* Style the scrollbar thumb (the draggable part) */
+.side-bar-on::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border-radius: 6px; 
+  }
+  /* When the scrollbar is hovered */
+.side-bar-on:hover::-webkit-scrollbar-thumb {
+    background-color:rgb(144, 144, 144); 
+  }
+.sidebar-on-section{
+    padding: 12px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    
+}
+.sidebar-on-section-title{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+
+}
+.side-bar-item{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    height: 40px;
+    padding: 0 12px;
+    width: 180px;    
+    border-radius: 10px;
+}
+.side-bar-item:hover{
+    background-color: rgb(247, 247, 247);
+}
+.sidebar-item-icons{
+    width: 24px;
+    height: 24px;
+    align-self: start;
+}
+.side-bar-item-text{
+    font-size: 14px;
+}
+.side-bar-item-selected{
+    background-color:  rgb(247, 247, 247);
+}
+.side-bar-item-selected:hover{
+    background-color: rgb(231, 231, 231);
+}
+.side-bar-footer{
+    padding: 16px 24px 0px;
+    font-size: 13px;
+    font-weight: 500;
+    word-spacing: 8px;
+}
+.side-bar-footer span{
+    word-spacing: 1px;
+}
+.side-bar-Copyright{
+    padding: 16px 24px;
+    font-size: 12px;
+    font-weight: 500;
+    opacity :0.5;
+}
+
+nav{
+    padding-left: 20px;
+    position: fixed;
+    z-index: 1;
+    top: 57px;
+    left: 72px;
+    right: 0px; 
+    background-color: transparent;
+    white-space: nowrap;
+}
+nav button{
+    cursor: pointer;
+    margin: 12px;
+    margin-left: 0;
+    border: none;
+    padding: 0 12px;
+    font-size: 14px;
+    height: 32px;
+    border-radius: 10px;
+}
+nav .unselected:hover{
+    background-color: rgb(231, 231, 231);
+}
+nav .selected{
+    color: white;
+    background-color: black;
+}
+.sidebar-f-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 162px;
+    height: 36px;
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    padding-top: 17px;
+    z-index: 210;
+    background-color: #fff;
+    translate: -240px 0px;
+    transition: all 0.2s ease  ;
+}
+.sidebar-f-but{
+    cursor: pointer;
+    width: 24px;
+    margin: -2px 24px;
+    display: inline;
+}
+.youtube-sidebar-f-logo{
+    cursor: pointer;
+    width: 90px;
+}
+.side-bar-f{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    background-color: #fff;
+    width: 240px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 200;
+    overflow-y:scroll;
+    translate: -240px 0px;
+    transition: translate 0.2s ease ;
+}
+.translatxb{
+    translate: 0px 0px !important;
+}
+.shadow{
+    box-shadow: 1000px 0px 0px 1000px #00000086;
+}
+.translat-xb{
+    translate: -240px 0px !important;
+}
+
+.side-bar-f::-webkit-scrollbar {
+    width: 8px;  /* Width of the scrollbar */
+  }
+  /* Style the scrollbar thumb (the draggable part) */
+.side-bar-f::-webkit-scrollbar-thumb {
+    background-color:transparent;
+    border-radius: 6px; 
+  }
+  /* When the scrollbar is hovered */
+.side-bar-f:hover::-webkit-scrollbar-thumb {
+    background-color:rgb(144, 144, 144); 
+  }
+.sidebar-f-section{
+    padding: 12px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+    
+}
+.sidebar-f-section-title{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 12px;
+
+}
+.side-bar-f-item{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    align-items: center;
+    height: 40px;
+    padding: 0 12px;
+    width: 180px;    
+    border-radius: 10px;
+}
+.side-bar-f-item:hover{
+    background-color: rgb(247, 247, 247);
+}
+.sidebar-f-item-icons{
+    width: 24px;
+    height: 24px;
+    align-self: start;
+}
+.side-bar-f-item-text{
+    font-size: 14px;
+    display: inline;
+    text-decoration: none;
+}
+.side-bar-f-item-selected{
+    background-color:  rgb(247, 247, 247);
+}
+.side-bar-f-item-selected:hover{
+    background-color: rgb(231, 231, 231);
+}
+.side-bar-f-footer{
+    padding: 16px 24px 0px;
+    font-size: 13px;
+    font-weight: 500;
+    word-spacing: 8px;
+}
+.side-bar-f-footer span{
+    word-spacing: 1px;
+}
+.side-bar-f-Copyright{
+    padding: 16px 24px;
+    font-size: 12px;
+    font-weight: 500;
+    opacity :0.5;
+}

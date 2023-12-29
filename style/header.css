@@ -1,0 +1,289 @@
+header{
+    height: 57px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    padding-bottom: 58px;
+}
+.sidebar-but{
+    cursor: pointer;
+    width: 24px;
+    margin: -2px 24px;
+    display: inline;
+}
+input:focus {
+    outline: 1px solid rgb(0, 109, 163);
+  }
+.youtube-logo{
+    cursor: pointer;
+    width: 90px;
+}
+.header-left{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 162px;
+    height: 24px;
+}
+.header-center{
+    min-width: 30px;
+    min-height: 5px;
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 35px;
+}
+.Search-bar{
+    padding-left: 12px;
+    font-size: 16px;
+    height: 34px;
+    flex: 1;
+    max-width: 540px;
+    width: 0px;
+    border: 1px solid #cccccc;
+    border-radius:40px 0 0 40px ;
+    font-family: Roboto, Arial, sans-serif;
+}
+.Search-dropdown{
+    position: fixed;
+    top: 52px;
+    left: 39.2rem;
+    max-width: 550px;
+    width: 100%;
+    z-index: 201;
+    height:500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(71, 71, 71, 0.5) 0px 2px 8px 0px;
+    display: none;
+}
+.Search-icon{
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+}
+.search-button{
+    cursor: pointer;
+    position: relative;
+    left: 0.5px;
+    border-left: none;
+    background-color: #f7f7f7;
+    width:64px;
+    height: 38px;
+    border: 1px solid #cccccc;
+    border-left: none;
+    padding: 1px 6px;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius: 0 40px 40px 0;
+}
+
+
+.voise-icon{
+    width: 24px;
+}
+.voise-button{
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+}
+.header-right{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 140px;
+    height: 32px;
+    justify-content: space-between;
+    margin-left: 29px;
+    margin-right: 24px;
+    flex-shrink: 0;
+}
+.profile{
+    border-radius: 50px;
+}
+.right{
+    padding-top: 3px;
+}
+.icons{
+    margin-top: 3px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+.notification{
+    position: relative;
+}
+.notification-number{
+    font-family: Roboto, Arial, sans-serif;
+    padding: 1px 5px ;
+    font-size: 10px;
+    position: absolute;
+    top: -3px;
+    right:-7px;
+    color: white;
+    background-color: #cc0000;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+.header-icon:hover{
+    background-color: #eaeaea;
+}
+.create-dropdawn{
+    position: absolute;
+    right: -8px;
+    top: 50px;
+    padding: 8px 0px;
+    height: 80px;
+    z-index: 201;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: none;
+
+}
+.display-block{
+    display: block!important;
+}
+.display-none{
+    display: none!important;
+}
+.create-dropdawn-item{
+    height: 40px;
+    padding: 0 36px 0 16px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.create-dropdawn-item:hover{
+    background-color: rgb(244, 244, 244);
+}
+.create-dropdawn-item-icon{
+    width: 24px;
+    height: 24px;
+}
+
+.notification-dropdown{
+    display: none;
+    position: absolute;
+    right: 90px;
+    top: 50px;
+    z-index: 201;
+    width: 480px;
+    height: 642px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    border-radius: 10px;  
+}
+.notification-dropdown-header{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    height: 49px;
+    align-items: center;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+.notification-dropdown-header-icon{
+    width: 24px;
+    height: 24px;
+}
+.notification-dropdown-header-text{
+    margin-left: 16px;
+}
+.notification-dropdown-item-container{
+    display: grid;
+}
+
+.profile-dropdawn{
+    width: 300px;
+    height: 750px;
+    position: absolute;
+    right: 20px;
+    top:45px;
+    z-index: 201;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    border-radius: 10px;  
+    display: none;
+}
+.profile-dropdawn-header{
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    white-space: nowrap;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.profile-dropdawn-header-profile-pecture-container{
+    width: 55px;
+}
+.profile-dropdawn-header-profile-pecture{
+    width: 40px;
+    height: 40px;
+}
+.profile-dropdawn-header-account-name{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.profile-dropdawn-header-account-email{
+    margin-bottom: 10px;
+}
+.profile-dropdawn-header-account-manage{
+    text-decoration: none;
+    font-size: 14px;
+    color: #065FD4;
+}
+.profile-dropdawn section{
+    width: 300px;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+.profile-dropdawn-item{
+    padding: 0 36px 0 16px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    align-items: center;
+    font-size: 14px;
+}
+.profile-dropdawn-item-image{
+    height: 24px;
+    width: 24px;
+}
+@media(max-width : 700px){
+    .Search-bar{
+        display: none;
+    }
+    .search-button{
+        background-color:transparent!important;
+        border: none!important;
+    }
+    .voise-button{
+        background-color:transparent!important;
+    }
+    .voise-icon{
+        position: absolute;
+        right: -40px;
+        bottom: 10px;
+    }
+    .Search-icon{
+        position: absolute;
+        right: -35px;
+        bottom: 10px;
+    }
+    .header-right{
+        flex-shrink: 1!important;
+    }
+
+}

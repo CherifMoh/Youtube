@@ -4,12 +4,12 @@ const create = document.querySelector('.js-create')
 const createDropdawn = document.querySelector('.js-create-dropdawn');
 create.addEventListener('click',()=>{
     if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload.svg`){
-        create.src = `../images/icons/upload-darke.svg`
+        create.src = `images/icons/upload-darke.svg`
         if(notification.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/notifications-darke.svg`){
-            notification.src = `../images/icons/notifications.svg`
+            notification.src = `images/icons/notifications.svg`
         }   
     }else{
-        create.src = `../images/icons/upload.svg`
+        create.src = `images/icons/upload.svg`
     }
     console.log(create.src)
     changeDisplay(createDropdawn)
@@ -22,12 +22,12 @@ const notification = document.querySelector('.js-notification');
 const notificationDropdawn = document.querySelector('.js-notification-dropdawn');
 notification.addEventListener('click',()=>{
     if(notification.src === `https://cherifmoh.github.io/Youtube/Youtube.html/icons/notifications.svg`){
-        notification.src = `../images/icons/notifications-darke.svg`
+        notification.src = `images/icons/notifications-darke.svg`
         if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/icons/upload-darke.svg`){
-            create.src = `../images/icons/upload.svg`
+            create.src = `images/icons/upload.svg`
         }
         }else{
-            notification.src = `../images/icons/notifications.svg`
+            notification.src = `images/icons/notifications.svg`
         }
     changeDisplay(notificationDropdawn)
     createDropdawn.classList.remove('display-block');
@@ -39,10 +39,10 @@ const profileDropdawn = document.querySelector('.js-profile-dropdawn');
 profile.addEventListener('click',()=>{
     
     if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload-darke.svg`){
-        create.src = `../images/icons/upload.svg`
+        create.src = `images/icons/upload.svg`
     }
     if(notification.src === `https://cherifmoh.github.io/images/icons/notifications-darke.svg`){
-        notification.src = `../images/icons/notifications.svg`
+        notification.src = `images/icons/notifications.svg`
     }
         
     changeDisplay(profileDropdawn)
@@ -68,10 +68,10 @@ function changeDisplay(item){
 
 function removeAllDropdawn(){
     if(create.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload-darke.svg`){
-        create.src = `../images/icons/upload.svg`
+        create.src = `images/icons/upload.svg`
     }
     if(notification.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/notifications-darke.svg`){
-        notification.src = `../images/icons/notifications.svg`
+        notification.src = `images/icons/notifications.svg`
     } 
     createDropdawn.classList.remove('display-block');
     searchDropdown.classList.remove('display-block');

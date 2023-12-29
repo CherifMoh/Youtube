@@ -107,33 +107,33 @@ document.querySelector('.left-section')
 document.querySelector('.js-create')
     .addEventListener('click',()=>{
         if(create.src !== `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload.svg`){
-            create.src = `../images/icons/upload-darke.svg`
+            create.src = `images/icons/upload-darke.svg`
         }else{
-            create.src = `../images/icons/upload.svg`
+            create.src = `images/icons/upload.svg`
         }
     });
 
     let dislike = document.querySelector('.js-dislike')
     dislike.addEventListener('click',()=>{
         if(like.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/like-darke.png`){
-            like.src = `../images/icons/like.png`
+            like.src = `images/icons/like.png`
         }
         if(dislike.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/dislike.png`){
-            dislike.src = `../images/icons/dislike-darke.png`
+            dislike.src = `images/icons/dislike-darke.png`
         }else{
-            dislike.src = `../images/icons/dislike.png`
+            dislike.src = `images/icons/dislike.png`
         }
     })
 
     let like = document.querySelector('.js-like')
     like.addEventListener('click',()=>{
         if(dislike.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/dislike-darke.png`){
-            dislike.src = `../images/icons/dislike.png`
+            dislike.src = `images/icons/dislike.png`
         }
         if(like.src === `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/like.png`){
-            like.src = `../images/icons/like-darke.png`
+            like.src = `images/icons/like-darke.png`
         }else{
-            like.src = `../images/icons/like.png`
+            like.src = `images/icons/like.png`
         }
     })
 

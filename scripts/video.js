@@ -106,9 +106,11 @@ document.querySelector('.left-section')
 
 document.querySelector('.js-create')
     .addEventListener('click',()=>{
-        if(create.src !== `https://cherifmoh.github.io/Youtube/Youtube.html/images/icons/upload.svg`){
+        if(!create.classList.contains('darke')){
+            create.classList.add('darke')
             create.src = `images/icons/upload-darke.svg`
         }else{
+            create.classList.remove('darke')
             create.src = `images/icons/upload.svg`
         }
     });

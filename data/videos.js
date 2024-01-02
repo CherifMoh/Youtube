@@ -227,5 +227,20 @@ export const videos =[
         likes:'98K',
         subscribers:'16.6M subscribers',
         description:''
+    },{
+        id:'18',
+        image:'https://external.xx.fbcdn.net/emg1/v/t13/12239470519440852840?url=https%3A%2F%2Fi.ytimg.com%2Fvi%2FGJ1d0XnfKr8%2Fhqdefault.jpg&fb_obo=1&utld=ytimg.com&stp=c0.5000x0.5000f_dst-emg0_p300x157_q75&ccb=13-1&oh=06_AbH_ewjzLFToLRY2moGT2vzglOCP1reFKYDkHmfb6X9qGQ&oe=65953110&_nc_sid=c24604',
+        duration:'20:21',
+        profilePicture:'https://yt3.ggpht.com/Ty_HvA1Eih9Dy42t5YNTOdHQhO20d0hT2eeSc-XhQxRG4jW9RoMheVrY_rlpsEM61YX9H_Mr=s48-c-k-c0x00ffffff-no-rj',
+        title:'I went on a Cut.. 🔪🔪🔪',
+        channelName:'David Laid',
+        stats:{
+            views:'1M views',
+            postTime:' 6 years ago',
+        },
+        url:'GJ1d0XnfKr8',
+        likes:'19K',
+        subscribers:'1.75M subscribers',
+        description:''
     }
 ]
